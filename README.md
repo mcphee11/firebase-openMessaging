@@ -1,6 +1,10 @@
 # firebase-openMessaging
 This is designed as an example only for using Firebase as the BaaS for Genesys Cloud [OpenMessaging](https://developer.genesys.cloud/commdigital/digital/openmessaging/) to be integrated into a native Mobile App. This repo is the server side of the Middleware and there is another repo I have created that is the client side written as a Flutter/Dart mobile application focusing on Android, but can also be deployed to iOS. This example requires you to have experience with firebase, npm & JavaScript.
 
+Here is the Overview of the design and this repo is to cover the Firebase components, The Fultter app needs to be created after this server side stage.
+
+![](/docs/images/overview.png)
+
 ## 1. Create the project
 
 To connect this with your existing Firebase project that is created with functions, firestore, storage and messaging enabled create a new Dir and do your normal:
