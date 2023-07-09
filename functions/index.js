@@ -122,6 +122,11 @@ app.post("/messages", (req, res) => {
       });
     } else {
       // Do Nothing
+      if (req.body.type !== "Text") {
+        console.log("other type...");
+        console.log(JSON.stringify(req.body));
+        res.end();
+      }
     }
   } catch (ex) {
     console.error(ex);
@@ -204,6 +209,7 @@ exports.firestoremonitoring = functions.firestore
             };
             capi.postConversationsMessagesInboundOpen(body).then(() =>{
               console.log("success");
+              return;
             });
           } if (newValue.attachment != "") {
             // Image type
@@ -247,14 +253,17 @@ exports.firestoremonitoring = functions.firestore
             capi.postConversationsMessagesInboundOpen(body).then(() =>{
               console.log("success");
               console.log(JSON.stringify(body));
+              return;
             });
           }
         })
             .catch((err) => {
               // Handle failure response
               console.error(err);
+              return;
             });
       } else {
         // Do Nothing not Inbound
+        return;
       }
     });
