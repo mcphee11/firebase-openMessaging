@@ -1,3 +1,7 @@
+# ⛔️ NO LONGER MAINTAINED ⛔️
+In stead I'm now using the MMSDK details can be found [HERE](https://developer.genesys.cloud/commdigital/digital/webmessaging/mobile-messaging/messenger-mobile-sdk/)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 # firebase-openMessaging
 This is designed as an example only for using Firebase as the BaaS for Genesys Cloud [OpenMessaging](https://developer.genesys.cloud/commdigital/digital/openmessaging/) to be integrated into a native Mobile App. This repo is the server side of the Middleware and there is another repo I have created that is the client side written as a Flutter/Dart mobile application focusing on Android, but can also be deployed to iOS. This example requires you to have experience with firebase, npm & JavaScript.
 
